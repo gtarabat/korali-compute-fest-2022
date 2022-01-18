@@ -38,7 +38,7 @@ d = +2.656e-02
 T = len(years)
 
 simulation = lotka_volterra(y0, T, a, b, c, d)
-xaxis = np.linspace(years[0], years[0]+T, len(simulation))
+simyears = np.linspace(years[0], years[0]+T, len(simulation))
 
 # Plot the data file
 fig = plt.figure()
@@ -48,8 +48,8 @@ plt.xlabel('years')
 plt.ylabel('population size')
 
 # Plot simulation
-plt.plot(years, simulation[:,0], color='b', label='simulated prey')
-plt.plot(years, simulation[:,1], color='r', label='simulated predator')
+plt.plot(simyears, simulation[:,0], color='b', label='simulated prey')
+plt.plot(simyears, simulation[:,1], color='r', label='simulated predator')
 plt.legend()
 
 # Save the figure to a file
