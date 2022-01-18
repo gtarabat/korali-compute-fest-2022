@@ -6,7 +6,7 @@ import numpy as np
 np.random.seed(0x007)
 
 # params to generate data
-beta0 = 1.0  # distance from shore
+beta0 = 10.0  # distance from shore
 alpha0 = 1.0 # position on coastline
 
 # generate N synthetic data points

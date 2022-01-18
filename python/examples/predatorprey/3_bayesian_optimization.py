@@ -44,22 +44,22 @@ e["Distributions"][1]["Maximum"] = +100.0
 # Defining the problem's variables.
 e["Variables"][0]["Name"] = "a"
 e["Variables"][0]["Prior Distribution"] = "Prior LV Parameter"
-e["Variables"][0]["Initial Value"] = 0.1
-e["Variables"][0]["Initial Standard Deviation"] = 0.01
+e["Variables"][0]["Initial Value"] = 0.5
+e["Variables"][0]["Initial Standard Deviation"] = 0.1
 
 e["Variables"][1]["Name"] = "b"
 e["Variables"][1]["Prior Distribution"] = "Prior LV Parameter"
-e["Variables"][1]["Initial Value"] = 0.05
+e["Variables"][1]["Initial Value"] = 0.03
 e["Variables"][1]["Initial Standard Deviation"] = 0.01
 
 e["Variables"][2]["Name"] = "c"
 e["Variables"][2]["Prior Distribution"] = "Prior LV Parameter"
-e["Variables"][2]["Initial Value"] = 0.1
-e["Variables"][2]["Initial Standard Deviation"] = 0.01
+e["Variables"][2]["Initial Value"] = 0.8
+e["Variables"][2]["Initial Standard Deviation"] = 0.1
 
 e["Variables"][3]["Name"] = "d"
 e["Variables"][3]["Prior Distribution"] = "Prior LV Parameter"
-e["Variables"][3]["Initial Value"] = 0.05
+e["Variables"][3]["Initial Value"] = 0.03
 e["Variables"][3]["Initial Standard Deviation"] = 0.01
 
 e["Variables"][4]["Name"] = "Sigma"

@@ -38,11 +38,11 @@ e["Variables"][0]["Initial Standard Deviation"] = 0.01
 
 e["Variables"][1]["Name"] = "b"
 e["Variables"][1]["Initial Value"] = 0.03
-e["Variables"][1]["Initial Standard Deviation"] = 0.001
+e["Variables"][1]["Initial Standard Deviation"] = 0.01
 
 e["Variables"][2]["Name"] = "c"
 e["Variables"][2]["Initial Value"] = 0.8
-e["Variables"][2]["Initial Standard Deviation"] = 0.01
+e["Variables"][2]["Initial Standard Deviation"] = 0.1
 
 e["Variables"][3]["Name"] = "d"
 e["Variables"][3]["Initial Value"] = 0.03
