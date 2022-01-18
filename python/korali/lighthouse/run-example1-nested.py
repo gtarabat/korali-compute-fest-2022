@@ -32,7 +32,7 @@ e["Variables"][0]["Prior Distribution"] = "Uniform 0"
 
 # Configuring Nested Sampling parameters
 e["Solver"]["Type"] = "Sampler/Nested"
-e["Solver"]["Resampling Method"] = "Multi Ellipse"
+e["Solver"]["Resampling Method"] = "Box"
 e["Solver"]["Number Live Points"] = 1500
 e["Solver"]["Termination Criteria"]["Min Log Evidence Delta"] = 1e-1
 

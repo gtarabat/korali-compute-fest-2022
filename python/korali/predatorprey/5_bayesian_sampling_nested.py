@@ -28,7 +28,7 @@ e["Random Seed"] = 0xC0FEE
 e["Problem"]["Type"] = "Bayesian/Reference"
 e["Problem"]["Likelihood Model"] = "Normal"
 e["Problem"]["Reference Data"] = getReferenceData()
-e["Problem"]["Computational Model"] = lambda sample: k_lotka_volterra(y0, T, sample)
+e["Problem"]["Computational Model"] = lambda sample: lotka_volterra_llk(y0, T, sample)
 
 # Configuring the problem's prior distributions
 e["Distributions"][0]["Name"] = "Prior LV Parameter"
