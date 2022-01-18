@@ -3,7 +3,7 @@
 # Import packages
 import numpy as np
 import matplotlib.pyplot as plt
-import model
+from models import *
 
 # Read the data file
 data = np.loadtxt('data.txt')
@@ -37,7 +37,7 @@ d = +2.656e-02
 # simulation length
 T = len(years)
 
-simulation = model.lotka_volterra(y0, T, a, b, c, d)
+simulation = lotka_volterra(y0, T, a, b, c, d)
 xaxis = np.linspace(years[0], years[0]+T, len(simulation))
 
 # Plot the data file

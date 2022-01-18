@@ -14,7 +14,7 @@ def lotka_volterra(y0, T, a, b, c, d):
   return y
 
 # Lotka-Volterra wrapper for Korali
-def k_lotka_volterra_opt(y0, T, data, sample):
+def lotka_volterra_sse(y0, T, data, sample):
   a = sample["Parameters"][0]
   b = sample["Parameters"][1]
   c = sample["Parameters"][2]
@@ -27,7 +27,7 @@ def k_lotka_volterra_opt(y0, T, data, sample):
   sample["F(x)"] = -np.linalg.norm(y - data)
   
 
-def k_lotka_volterra(y0, T, sample):
+def lotka_volterra_llk(y0, T, sample):
   a = sample["Parameters"][0]
   b = sample["Parameters"][1]
   c = sample["Parameters"][2]

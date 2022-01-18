@@ -2,13 +2,13 @@
 
 ## In this example, we demonstrate how Korali finds values for the
 ## parameter of the [Lotka-Volterra](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations)
-## equations that maximize the likelihood of the reference data.
+## equations that minimize the sum of squarred errors wrt the reference data.
 
 # Importing computational model
 import sys
 import math
 sys.path.append('./_model')
-from model import *
+from models import *
 
 # Time scale
 T = 21
@@ -29,7 +29,7 @@ e = korali.Experiment()
 # Configuring Problem
 e["Random Seed"] = 0xC0FEE
 e["Problem"]["Type"] = "Optimization"
-e["Problem"]["Objective Function"] = lambda sample: k_lotka_volterra_opt(y0, T, data, sample)
+e["Problem"]["Objective Function"] = lambda sample: lotka_volterra_sse(y0, T, data, sample)
 
 # Defining the problem's variables.
 e["Variables"][0]["Name"] = "a"
