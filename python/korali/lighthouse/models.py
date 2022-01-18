@@ -9,7 +9,7 @@ np.random.seed(0x007)
 beta0 = 1.0  # distance from shore
 alpha0 = 1.0 # position on coastline
 
-# synthetic data
+# generate N synthetic data points
 def getReferenceData(N=100):
     angles = np.random.uniform(-np.pi/2,+np.pi/2,N)
     flashes = alpha0 + beta0 * np.tan(angles)
