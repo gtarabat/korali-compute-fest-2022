@@ -9,13 +9,13 @@ data = np.loadtxt('data.txt')
 
 # Reformat data
 years = data[:,0]
-predator = data[:,1]
-prey = data[:,2]
+prey = data[:,1]
+predator = data[:,2]
 
 # Plot the data file
 fig = plt.figure()
-plt.plot(years, prey, color='b', label='prey', marker='x')
-plt.plot(years, predator, color='r', label='predator', marker='x')
+plt.plot(years, prey, '--x', color='b', label='prey')
+plt.plot(years, predator, '--x', color='r', label='predator')
 plt.xlabel('years')
 plt.ylabel('population size')
 plt.legend()

@@ -21,8 +21,7 @@ def lotka_volterra_sse(y0, T, data, sample):
   d = sample["Parameters"][3]
   
   y = lotka_volterra(y0, T, a, b, c, d)
-  y = np.concatenate((y[:,0], y[:,1]), axis=0)
-  data = np.concatenate((data[:,2], data[:,1]), axis=0)
+  data = data[:,1:]
 
   sample["F(x)"] = -np.linalg.norm(y - data)
   
@@ -47,6 +46,6 @@ def getReferenceData():
     data = np.loadtxt('data.txt')
 
     # Reformat data
-    predator = data[:,1]
-    prey = data[:,2]
+    prey = data[:,1]
+    predator = data[:,2]
     return list(prey) + list(predator) 

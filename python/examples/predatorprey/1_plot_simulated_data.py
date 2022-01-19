@@ -10,8 +10,8 @@ data = np.loadtxt('data.txt')
 
 # Reformat data
 years = data[:,0]
-predator = data[:,1]
-prey = data[:,2]
+prey = data[:,1]
+predator = data[:,2]
 
 # Simulate data
 
