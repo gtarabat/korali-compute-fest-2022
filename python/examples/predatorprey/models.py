@@ -34,10 +34,12 @@ def lotka_volterra_llk(y0, T, sample):
   sig = sample["Parameters"][4]
   
   y = lotka_volterra(y0, T, a, b, c, d)
+  y = np.clip(y, a_min=0., a_max=np.inf)
 
   simData = list(y[:,0]) + list(y[:,1])
   sample["Reference Evaluations"] = simData
   sample["Standard Deviation"] = 2*T*[sig]
+  sample["Degrees Of Freedom"] = 2*T*[sig]
 
 # Extract reference data from data.txt
 def getReferenceData():

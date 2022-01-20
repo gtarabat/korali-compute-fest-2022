@@ -26,7 +26,7 @@ e = korali.Experiment()
 # Configuring Problem
 e["Random Seed"] = 0xC0FEE
 e["Problem"]["Type"] = "Bayesian/Reference"
-e["Problem"]["Likelihood Model"] = "Normal"
+e["Problem"]["Likelihood Model"] = "StudentT"
 e["Problem"]["Reference Data"] = getReferenceData()
 e["Problem"]["Computational Model"] = lambda sample: lotka_volterra_llk(y0, T, sample)
 
@@ -66,7 +66,7 @@ e["Solver"]["Termination Criteria"]["Min Log Evidence Delta"] = 1e-1
 
 # Configuring results path
 e["File Output"]["Enabled"] = True
-e["File Output"]["Path"] = '_korali_result_nested'
+e["File Output"]["Path"] = '_korali_result_nested_positive_student'
 e["File Output"]["Frequency"] = 5000
 
 e["Console Output"]["Frequency"] = 500

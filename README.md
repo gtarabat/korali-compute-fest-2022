@@ -22,7 +22,6 @@ compute-fest-2022
         │   4_bayesian_sampling_tmcmc.py
         │   5_bayesian_sampling_nested.py
         │   6_bayesian_sampling_nested_restart_feature.py
-        │   0_plot_data.py
         │
         └───lighthouse
             README.md
