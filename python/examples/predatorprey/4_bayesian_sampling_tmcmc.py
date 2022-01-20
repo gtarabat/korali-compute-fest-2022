@@ -39,7 +39,7 @@ e["Distributions"][0]["Maximum"] = +1.0
 e["Distributions"][1]["Name"] = "Prior Sigma"
 e["Distributions"][1]["Type"] = "Univariate/Uniform"
 e["Distributions"][1]["Minimum"] = 0.0
-e["Distributions"][1]["Maximum"] = +100.0
+e["Distributions"][1]["Maximum"] = +25.0
 
 # Defining the problem's variables.
 e["Variables"][0]["Name"] = "a"
