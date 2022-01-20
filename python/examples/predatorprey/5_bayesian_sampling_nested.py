@@ -61,12 +61,12 @@ e["Variables"][4]["Initial Value"] = 5
 # Configuring Nested Sampling parameters
 e["Solver"]["Type"] = "Sampler/Nested"
 e["Solver"]["Resampling Method"] = "Multi Ellipse"
-e["Solver"]["Number Live Points"] = 1500
+e["Solver"]["Number Live Points"] = 1000
 e["Solver"]["Termination Criteria"]["Min Log Evidence Delta"] = 1e-1
 
 # Configuring results path
 e["File Output"]["Enabled"] = True
-e["File Output"]["Path"] = '_korali_result_nested'
+e["File Output"]["Path"] = '_korali_result_nested_500'
 e["File Output"]["Frequency"] = 5000
 
 e["Console Output"]["Frequency"] = 500

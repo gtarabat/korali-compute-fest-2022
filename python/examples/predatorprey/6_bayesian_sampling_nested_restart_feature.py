@@ -24,8 +24,8 @@ k = korali.Engine()
 e = korali.Experiment()
 
 # Loading previous run (if exist)
-e["File Output"]["Path"] = "_korali_result_nested"
-found = e.loadState('_korali_result_nested/latest')
+e["File Output"]["Path"] = "_korali_result_nested_restart"
+found = e.loadState('_korali_result_nested_restart/latest')
 
 # If not found, we run first 5000 generations.
 if (found == False):
@@ -80,12 +80,11 @@ e["Variables"][4]["Initial Value"] = 5
 # Configuring Nested Sampling parameters
 e["Solver"]["Type"] = "Sampler/Nested"
 e["Solver"]["Resampling Method"] = "Multi Ellipse"
-e["Solver"]["Number Live Points"] = 1500
+e["Solver"]["Number Live Points"] = 1000
 e["Solver"]["Termination Criteria"]["Min Log Evidence Delta"] = 1e-1
 
 # Configuring results path
 e["File Output"]["Enabled"] = True
-e["File Output"]["Path"] = '_korali_result_nested'
 e["File Output"]["Frequency"] = 5000
 
 e["Console Output"]["Frequency"] = 500
