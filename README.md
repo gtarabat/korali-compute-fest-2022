@@ -12,7 +12,24 @@ compute-fest-2022
     └───examples
         │
         └───predatorprey
+        │   README.txt
+        │   data.txt
+        │   models.py
+        │   0_plot_data.py
+        │   1_plot_simulated_data.py
+        │   2_sse_optimization.py
+        │   3_bayesian_optimization.py
+        │   4_bayesian_sampling_tmcmc.py
+        │   5_bayesian_sampling_nested.py
+        │   6_bayesian_sampling_nested_restart_feature.py
+        │   0_plot_data.py
         │
         └───lighthouse
-   
+            README.txt
+            models.py
+            run-example1-tmcmc.py
+            run-example1-nested.py
+            run-example2-tmcmc.py
+            run-example2-nested.py
+            run-tmcmc-multiexperiment-feature.py
 ```
