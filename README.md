@@ -12,7 +12,7 @@ compute-fest-2022
     └───examples
         │
         └───predatorprey
-        │   README.txt
+        │   README.md
         │   data.txt
         │   models.py
         │   0_plot_data.py
@@ -25,7 +25,7 @@ compute-fest-2022
         │   0_plot_data.py
         │
         └───lighthouse
-            README.txt
+            README.md
             models.py
             run-example1-tmcmc.py
             run-example1-nested.py
