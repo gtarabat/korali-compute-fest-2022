@@ -66,7 +66,7 @@ e["Solver"]["Termination Criteria"]["Min Log Evidence Delta"] = 1e-1
 
 # Configuring results path
 e["File Output"]["Enabled"] = True
-e["File Output"]["Path"] = '_korali_result_nested_500'
+e["File Output"]["Path"] = '_korali_result_nested'
 e["File Output"]["Frequency"] = 5000
 
 e["Console Output"]["Frequency"] = 500
