@@ -11,7 +11,7 @@ sys.path.append('./models')
 from models import *
 
 # Creating Synthetic Data
-data = getReferenceData(N=512)
+data = getReferenceData(N=8)
 
 # Starting Korali's Engine
 import korali
@@ -42,7 +42,7 @@ e["Variables"][1]["Prior Distribution"] = "Uniform 1"
 # Configuring Nested Sampling parameters
 e["Solver"]["Type"] = "Sampler/Nested"
 e["Solver"]["Resampling Method"] = "Box"
-e["Solver"]["Number Live Points"] = 1500
+e["Solver"]["Number Live Points"] = 1000
 e["Solver"]["Termination Criteria"]["Min Log Evidence Delta"] = 1e-1
 
 # Configuring results path

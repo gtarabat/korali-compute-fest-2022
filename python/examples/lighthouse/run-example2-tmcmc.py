@@ -11,7 +11,7 @@ sys.path.append('./models')
 from models import *
 
 # Creating Synthetic Data
-data = getReferenceData(N=512)
+data = getReferenceData(N=8)
 
 # Starting Korali's Engine
 import korali
