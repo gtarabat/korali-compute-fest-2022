@@ -19,16 +19,6 @@ predator = data[:,2]
 y0 = [prey[0], predator[0]]
 
 # set LV model parameter
-a = 0.5
-b = 0.01
-c = 0.5
-d = 0.01
-
-#a = +5.903e-02
-#b = +4.731e-03
-#c = +7.103e-01
-#d = +2.406e-02
-
 a = +5.475e-01
 b = +2.812e-02
 c = +8.432e-01
@@ -53,7 +43,7 @@ plt.plot(simyears, simulation[:,1], color='r', label='simulated predator')
 plt.legend()
 
 # Save the figure to a file
-plt.savefig('simulated_population.png')
+plt.savefig('1_simulated_population.png')
 
 #uncomment to display plot on screen
 #plt.show() #uncomment to display plot on screen

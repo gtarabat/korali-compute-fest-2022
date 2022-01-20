@@ -21,7 +21,7 @@ plt.ylabel('population size')
 plt.legend()
 
 # Save the figure to a file
-plt.savefig('population.png')
+plt.savefig('0_population.png')
 
 #uncomment to display plot on screen
 #plt.show() #uncomment to display plot on screen

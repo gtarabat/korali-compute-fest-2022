@@ -1,5 +1,6 @@
 _korali_result*
 *.png
 .DS_Store
+._.DS_Store
 __pycache__
 
