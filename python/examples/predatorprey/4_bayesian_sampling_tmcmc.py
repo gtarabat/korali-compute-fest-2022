@@ -61,8 +61,7 @@ e["Variables"][4]["Initial Value"] = 5
 # Configuring TMCMC parameters
 e["Solver"]["Type"] = "Sampler/TMCMC"
 e["Solver"]["Population Size"] = 10000
-e["Solver"]["Target Coefficient Of Variation"] = 0.8
-e["Solver"]["Covariance Scaling"] = 0.04
+e["Solver"]["Target Coefficient Of Variation"] = 1.
 
 # Configuring results path
 e["File Output"]["Enabled"] = True
