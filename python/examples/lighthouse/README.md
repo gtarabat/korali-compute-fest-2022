@@ -1,14 +1,10 @@
 The Lighthouse Problem
 ================================================================================= 
-
-The Lighthouse Problem 
-                                                                        
 A lighthouse is somewhere off a piece of straight coastline at a position along the shore and a distance out at sea. It emits a series of short highly collimated flashes at random intervals and hence at random azimuths. These pulses are intercepted on the coast by photo-detectors that record only the fact that a flash has occurred, but not the angle from which it came. :A series of flashes have so far been recorded. Where is the lighthouse? - Text taken from [Sivia2006] (Example 3, 2nd Edition).
                                                                            
 References                                                                   
-                                                                         
-   [Gull1988] - Bayesian Inductive Inference And Maximum Entropy, Stephen F. Gull
-   [Sivia2006] - Data Analysis, A Bayesian Tutorial, Oxford University Press, D. Sivia, J. Skilling
+
+[Sivia2006] - Data Analysis, A Bayesian Tutorial, Oxford University Press, D. Sivia, J. Skilling
 
 
 Setup                                                                           
